@@ -1,18 +1,21 @@
 #!/usr/bin/python3
-
-"""Class Square"""
+"""defines a class called Square"""
 
 
 class Square:
-    """Square gives the square of a value"""
+
+    """Represents a square"""
+
     def __init__(self, size=0):
-        """Initializing the Square class using the __init__ method
-        Arqgs:
-            size: is the size of the square"""
+
+        """Initializes the data
+        Args:
+            size: size of the square
+        """
 
         if type(size) is int:
             if size < 0:
-                raise ValueError("size must be >=0")
+                raise ValueError("size must be >= 0")
             else:
                 self.__size = size
         else:
